@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k}{CREATE}\PYG{+w}{ }\PYG{k}{DATABASE}\PYG{+w}{ }\PYG{k}{IF}\PYG{+w}{ }\PYG{k}{NOT}\PYG{+w}{ }\PYG{k}{EXISTS}\PYG{+w}{ }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{;}
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} creating databse}
+\PYG{+w}{    }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} creating the table as instructed}
+\PYG{+w}{    }\PYG{k}{CREATE}\PYG{+w}{ }\PYG{k}{TABLE}\PYG{+w}{ }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{n}{Order\PYGZus{}Details}\PYG{p}{(}
+\PYG{+w}{        }\PYG{n}{order\PYGZus{}code}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{k}{Auto\PYGZus{}Increment}\PYG{+w}{ }\PYG{k}{Primary}\PYG{+w}{ }\PYG{k}{Key}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{customer\PYGZus{}name}\PYG{+w}{ }\PYG{k+kt}{varchar}\PYG{p}{(}\PYG{l+m+mi}{30}\PYG{p}{),}
+\PYG{+w}{        }\PYG{n}{mobile}\PYG{+w}{ }\PYG{k+kt}{varchar}\PYG{p}{(}\PYG{l+m+mi}{30}\PYG{p}{),}
+\PYG{+w}{        }\PYG{n}{address\PYGZus{}}\PYG{+w}{ }\PYG{k+kt}{varchar}\PYG{p}{(}\PYG{l+m+mi}{70}\PYG{p}{),}
+\PYG{+w}{        }\PYG{n}{product\PYGZus{}ordered}\PYG{+w}{ }\PYG{k+kt}{varchar}\PYG{p}{(}\PYG{l+m+mi}{30}\PYG{p}{),}
+\PYG{+w}{        }\PYG{n}{catagory}\PYG{+w}{ }\PYG{k+kt}{varchar}\PYG{p}{(}\PYG{l+m+mi}{30}\PYG{p}{),}
+\PYG{+w}{        }\PYG{n}{quantity}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{delivery\PYGZus{}status}\PYG{+w}{ }\PYG{k+kt}{boolean}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{remark}\PYG{+w}{ }\PYG{k+kt}{varchar}\PYG{p}{(}\PYG{l+m+mi}{40}\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{)}
+\end{Verbatim}

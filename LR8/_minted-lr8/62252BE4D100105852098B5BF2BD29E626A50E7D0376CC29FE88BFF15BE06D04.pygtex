@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{salesman\PYGZus{}id}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Salesman ID\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{k}{name}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Salesman Name\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{city}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}City\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{commission}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Commission\PYGZdq{}}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{Relations}\PYG{p}{.}\PYG{n}{salesman}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{n}{commission}\PYG{+w}{ }\PYG{o}{\PYGZgt{}=}\PYG{+w}{ }\PYG{l+m+mf}{0.12}
+\PYG{+w}{    }\PYG{k}{AND}\PYG{+w}{ }\PYG{n}{commission}\PYG{+w}{ }\PYG{o}{\PYGZlt{}=}\PYG{+w}{ }\PYG{l+m+mf}{0.14}
+\end{Verbatim}

@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{o}{*}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{employees}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{n}{reportsTo}\PYG{+w}{ }\PYG{k}{IS}\PYG{+w}{ }\PYG{n+no}{NULL}\PYG{p}{;}
+\end{Verbatim}

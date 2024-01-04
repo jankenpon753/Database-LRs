@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{shippedDate}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{productCode}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{productName}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{orders}\PYG{+w}{ }\PYG{n}{o}
+\PYG{+w}{    }\PYG{k}{JOIN}\PYG{+w}{ }\PYG{n}{orderdetails}\PYG{+w}{ }\PYG{n}{od}\PYG{+w}{ }\PYG{k}{USING}\PYG{p}{(}\PYG{n}{orderNumber}\PYG{p}{)}
+\PYG{+w}{    }\PYG{k}{JOIN}\PYG{+w}{ }\PYG{n}{products}\PYG{+w}{ }\PYG{n}{p}\PYG{+w}{ }\PYG{k}{USING}\PYG{p}{(}\PYG{n}{productCode}\PYG{p}{)}
+\PYG{k}{GROUP}\PYG{+w}{ }\PYG{k}{BY}
+\PYG{+w}{    }\PYG{n}{shippedDate}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{productCode}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{productName}
+\PYG{k}{HAVING}
+\PYG{+w}{    }\PYG{k+kt}{YEAR}\PYG{p}{(}\PYG{n}{o}\PYG{p}{.}\PYG{n}{shippedDate}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{2003}
+\PYG{k}{ORDER}\PYG{+w}{ }\PYG{k}{BY}
+\PYG{+w}{    }\PYG{n}{shippedDate}\PYG{+w}{ }\PYG{k}{ASC}\PYG{p}{;}
+\end{Verbatim}

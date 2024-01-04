@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage[margin=30mm, paper = a4paper]{geometry}
+\usepackage{minted}
+\usepackage{multicol}
+% \usepackage[english]{babel}
+
+\title{Basic MySQL Operations}
+\author{Md Tajim An Noor}
+\date{}
+
+\begin{document}
+\input{cover_mri.tex}
+\pagebreak
+
+\tableofcontents
+
+\maketitle
+
+\section{Tools Used}
+\begin{itemize}
+    \item MySQL
+    \item VS Code - as an IDE to use SQL
+    \item MacTeX -\LaTeX  compiler
+    \item VS Code with LaTeX workshop extension as a text editor
+\end{itemize}
+
+
+\section{Process}
+
+\subsection{SQL Codes:}
+\inputminted[breaklines]{SQL}{codes/Product.session.sql}
+
+\subsection{Output}
+\begin{figure}[!ht]
+    \includegraphics[width=\linewidth]{images/table.png}
+    \caption{Table, ProductInfo, created using the above SQL code.}
+    \label{fig:table}
+\end{figure}
+\begin{figure}[!ht]
+    \includegraphics[width=\linewidth]{images/select.png}
+    \caption{A query view from ProductInfo where Salesman is "Robert"}
+    \label{fig:query}
+\end{figure}
+
+
+\section{Analysis}
+\subsubsection{Code explanation}
+First the code used:
+\begin{minted}[breaklines]{SQL}
+CREATE DATABASE Product;
+use Product;
+\end{minted}
+is to first create a database named $Product$ and then by the $use$ keyword, the database is select for further operations.\\
+Next by using the following code, a table in the previous database is created.
+\begin{minted}[breaklines]{SQL}
+CREATE TABLE
+ProductInfo (
+    Id int not null auto_increment primary key,
+    Name varchar(30),
+    OrderID int,
+    Salesman varchar(20),
+    Catagory varchar(20),
+    Unit_Price int,
+    Quantity int
+)
+\end{minted}
+After that, insertion in the database is done using the INSERT INTO SQL:
+\begin{minted}[breaklines]{SQL}
+INSERT INTO
+ProductProductInfo (
+    Name,
+    OrderID,
+    Salesman,
+    Catagory,
+    Unit_Price,
+    Quantity
+)
+VALUES
+('Mouse', 123, 'Robert', 'Accessories', 2560.00, 3)
+\end{minted}
+Lastly, to view selected data in a table, the SELECT code is used:
+\begin{minted}[breaklines]{SQL}
+SELECT
+*
+FROM
+Product.ProductInfo
+where
+Salesman = 'Robert'
+\end{minted}
+
+\section{Discussion}
+Int this SQL code the Id column is kept as a primary key, and when it was initialised, AUTO\_INCREMENT was used. As such, when inserting records, no Id was provided.\\
+There are some other basic operations on SQL, like DROP which removes the database. It was not included here. Some other codes like UPDATE, ALTER TABLE was also used but not shown here. I also ran some experiments with various codes to get a grasp on the SQL. It's easier than it looks. Also, the codes being not case-sensitive, makes it far easier to avoid syntax errors.
+
+% \bibliographystyle{IEEEtran}
+% \bibliography{ref}
+\end{document}

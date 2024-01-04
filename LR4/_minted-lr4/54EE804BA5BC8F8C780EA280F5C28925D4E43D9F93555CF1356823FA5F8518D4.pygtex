@@ -1,0 +1,74 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{o}{\PYGZhy{}\PYGZhy{}}\PYG{n}{creating}\PYG{+w}{ }\PYG{n}{the}\PYG{+w}{ }\PYG{n}{1st}\PYG{+w}{ }\PYG{k}{table}\PYG{+w}{ }\PYG{k}{and}\PYG{+w}{ }\PYG{n}{adding}\PYG{+w}{ }\PYG{n}{info}
+\PYG{k}{CREATE}\PYG{+w}{ }\PYG{k}{TABLE}\PYG{+w}{ }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{k}{Order}\PYG{p}{(}
+\PYG{+w}{    }\PYG{n}{ord\PYGZus{}no}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{k}{Auto\PYGZus{}Increment}\PYG{+w}{ }\PYG{k}{Primary}\PYG{+w}{ }\PYG{k}{Key}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{purch\PYGZus{}amt}\PYG{+w}{ }\PYG{k+kt}{decimal}\PYG{p}{(}\PYG{l+m+mi}{6}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2}\PYG{p}{),}
+\PYG{+w}{    }\PYG{n}{ord\PYGZus{}date}\PYG{+w}{ }\PYG{k+kt}{Date}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{customer\PYGZus{}id}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{salesman\PYGZus{}id}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} )}
+\PYG{+w}{    }\PYG{k}{INSERT}\PYG{+w}{ }\PYG{k}{INTO}
+\PYG{+w}{        }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{k}{Order}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{            }\PYG{c+c1}{\PYGZhy{}\PYGZhy{} ord\PYGZus{}no,}
+\PYG{+w}{            }\PYG{n}{purch\PYGZus{}amt}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n}{ord\PYGZus{}date}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n}{customer\PYGZus{}id}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n}{salesman\PYGZus{}id2}
+\PYG{+w}{        }\PYG{p}{)}
+\PYG{+w}{    }\PYG{k}{VALUES}
+\PYG{+w}{        }\PYG{p}{(}
+\PYG{+w}{            }\PYG{l+m+mi}{70001}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}150.5\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+s+s1}{\PYGZsq{}2012\PYGZhy{}10\PYGZhy{}05\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+m+mi}{3005}\PYG{p}{,}
+\PYG{+w}{            }\PYG{l+m+mi}{5002}
+\PYG{+w}{        }\PYG{p}{);}
+
+\PYG{p}{(}\PYG{l+m+mf}{2480.4}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}2012\PYGZhy{}10\PYGZhy{}10\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3009}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{5003}\PYG{p}{),}
+\PYG{p}{(}\PYG{l+m+mf}{110.5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}2012\PYGZhy{}08\PYGZhy{}17\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3009}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{5003}\PYG{p}{),}
+\PYG{p}{(}\PYG{l+m+mf}{2400.6}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}2012\PYGZhy{}07\PYGZhy{}27\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3007}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{5001}\PYG{p}{);}
+
+\PYG{p}{(}\PYG{l+m+mi}{70007}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{948.5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}2012\PYGZhy{}09\PYGZhy{}10\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3005}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{5002}\PYG{p}{);}
+
+\PYG{p}{(}\PYG{l+m+mi}{5760}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}2012\PYGZhy{}09\PYGZhy{}10\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3002}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{5001}\PYG{p}{),}
+\PYG{p}{(}\PYG{l+m+mf}{270.65}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}2012\PYGZhy{}09\PYGZhy{}10\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3001}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{5005}\PYG{p}{),}
+\PYG{p}{(}\PYG{l+m+mf}{1983.43}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}2012\PYGZhy{}10\PYGZhy{}10\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3004}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{5006}\PYG{p}{),}
+\PYG{p}{(}\PYG{l+m+mf}{75.29}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}2012\PYGZhy{}08\PYGZhy{}17\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3003}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{5007}\PYG{p}{),}
+\PYG{p}{(}\PYG{l+m+mf}{250.45}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}2012\PYGZhy{}06\PYGZhy{}27\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3008}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{5002}\PYG{p}{),}
+\PYG{p}{(}\PYG{l+m+mf}{3045.6}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}2012\PYGZhy{}04\PYGZhy{}25\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3002}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{5001}\PYG{p}{);}
+
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} creating the 2nd table and adding info}
+
+\PYG{k}{CREATE}\PYG{+w}{ }\PYG{k}{TABLE}\PYG{+w}{ }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{n}{Customer}\PYG{p}{(}
+\PYG{+w}{    }\PYG{n}{customer\PYGZus{}id}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{+w}{ }\PYG{k}{Auto\PYGZus{}Increment}\PYG{+w}{ }\PYG{k}{Primary}\PYG{+w}{ }\PYG{k}{Key}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{cust\PYGZus{}name}\PYG{+w}{ }\PYG{k+kt}{varchar}\PYG{p}{(}\PYG{l+m+mi}{40}\PYG{p}{),}
+\PYG{+w}{    }\PYG{n}{city}\PYG{+w}{ }\PYG{k+kt}{varchar}\PYG{p}{(}\PYG{l+m+mi}{40}\PYG{p}{),}
+\PYG{+w}{    }\PYG{n}{grade}\PYG{+w}{ }\PYG{k+kt}{int}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{ord\PYGZus{}date}\PYG{+w}{ }\PYG{k+kt}{Date}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{salesman\PYGZus{}id}\PYG{+w}{ }\PYG{k+kt}{int}
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} )}
+\PYG{k}{ALTER}\PYG{+w}{ }\PYG{k}{TABLE}
+\PYG{+w}{    }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{n}{Customer}\PYG{+w}{ }\PYG{k}{drop}\PYG{+w}{ }\PYG{k}{column}\PYG{+w}{ }\PYG{n}{ord\PYGZus{}date}\PYG{p}{;}
+\PYG{k}{INSERT}\PYG{+w}{ }\PYG{k}{INTO}
+\PYG{+w}{    }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{n}{Customer}\PYG{+w}{ }\PYG{p}{(}\PYG{n}{cust\PYGZus{}name}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{city}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{grade}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{salesman\PYGZus{}id}\PYG{p}{)}
+\PYG{k}{VALUES}
+\PYG{p}{(}
+\PYG{+w}{    }\PYG{l+m+mi}{3001}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+s+s1}{\PYGZsq{}Brad Guzan\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+s+s1}{\PYGZsq{}London\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n+no}{null}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+m+mi}{5005}
+\PYG{p}{);}
+\PYG{p}{(}
+\PYG{+w}{    }\PYG{l+s+s1}{\PYGZsq{}Nick Romando\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+s+s1}{\PYGZsq{}New York\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+m+mi}{100}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+m+mi}{5001}
+\PYG{p}{),}
+\PYG{p}{(}
+\PYG{+w}{    }\PYG{l+s+s1}{\PYGZsq{}Jozy Altidor\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+s+s1}{\PYGZsq{}Moscow\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+m+mi}{200}\PYG{p}{,}
+\PYG{+w}{    }\PYG{l+m+mi}{5007}
+\PYG{p}{).}
+\PYG{k}{To}\PYG{+w}{ }\PYG{n}{save}\PYG{+w}{ }\PYG{n}{space}\PYG{p}{,}\PYG{+w}{ }\PYG{k}{some}\PYG{+w}{ }\PYG{n}{entries}\PYG{+w}{ }\PYG{n}{are}\PYG{+w}{ }\PYG{n}{shown}\PYG{p}{.}
+\end{Verbatim}

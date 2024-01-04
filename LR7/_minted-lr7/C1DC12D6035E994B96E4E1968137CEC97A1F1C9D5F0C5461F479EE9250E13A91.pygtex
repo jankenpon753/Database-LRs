@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n+nf}{COUNT}\PYG{p}{(}\PYG{n}{o}\PYG{p}{.}\PYG{n}{order\PYGZus{}no}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Total Order\PYGZdq{}}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{Relations}\PYG{p}{.}\PYG{k}{Order}\PYG{+w}{ }\PYG{n}{o}
+\PYG{+w}{    }\PYG{k}{JOIN}\PYG{+w}{ }\PYG{n}{Relations}\PYG{p}{.}\PYG{n}{Customer}\PYG{+w}{ }\PYG{n}{c}\PYG{+w}{ }\PYG{k}{ON}\PYG{+w}{ }\PYG{n}{o}\PYG{p}{.}\PYG{n}{customer\PYGZus{}id}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{c}\PYG{p}{.}\PYG{n}{customer\PYGZus{}id}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{n}{o}\PYG{p}{.}\PYG{n}{order\PYGZus{}date}\PYG{+w}{ }\PYG{k}{BETWEEN}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}2016\PYGZhy{}09\PYGZhy{}05\PYGZsq{}}
+\PYG{+w}{    }\PYG{k}{AND}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}2016\PYGZhy{}10\PYGZhy{}17\PYGZsq{}}\PYG{p}{;}
+\end{Verbatim}

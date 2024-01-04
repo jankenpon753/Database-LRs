@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n+nf}{sum}\PYG{p}{(}\PYG{n}{purchase\PYGZus{}amount}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Total Purchased Amount\PYGZdq{}}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{Relations}\PYG{p}{.}\PYG{k}{Order}
+\end{Verbatim}

@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{o}{*}
+\PYG{k}{FROM}
+\PYG{n}{Product}\PYG{p}{.}\PYG{n}{ProductInfo}
+\PYG{k}{where}
+\PYG{n}{Salesman}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}Robert\PYGZsq{}}
+\end{Verbatim}

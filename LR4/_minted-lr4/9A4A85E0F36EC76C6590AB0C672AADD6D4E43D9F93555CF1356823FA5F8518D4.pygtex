@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{alter}\PYG{+w}{ }\PYG{k}{TABLE}
+\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{n}{Order\PYGZus{}Details}
+\PYG{k}{ADD}
+\PYG{+w}{    }\PYG{n}{order\PYGZus{}date}\PYG{+w}{ }\PYG{k+kt}{date}\PYG{p}{,}
+\PYG{k}{ADD}
+\PYG{+w}{    }\PYG{n}{delivery\PYGZus{}date}\PYG{+w}{ }\PYG{k+kt}{date}\PYG{p}{;}
+\end{Verbatim}

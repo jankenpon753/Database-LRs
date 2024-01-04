@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{INSERT}\PYG{+w}{ }\PYG{k}{INTO}
+\PYG{n}{ProductProductInfo}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{    }\PYG{n}{Name}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{OrderID}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{Salesman}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{Catagory}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{Unit\PYGZus{}Price}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{Quantity}
+\PYG{p}{)}
+\PYG{k}{VALUES}
+\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Mouse\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{123}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}Robert\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}Accessories\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2560}\PYG{p}{.}\PYG{l+m+mi}{00}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{)}
+\end{Verbatim}

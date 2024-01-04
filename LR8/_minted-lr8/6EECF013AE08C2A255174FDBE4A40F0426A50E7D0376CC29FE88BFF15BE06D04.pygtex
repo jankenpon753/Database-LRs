@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n+nf}{sum}\PYG{p}{(}\PYG{n}{amount}\PYG{p}{)}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{payments}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{k+kt}{YEAR}\PYG{p}{(}\PYG{n}{paymentDate}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{2004}
+\PYG{+w}{    }\PYG{k}{and}\PYG{+w}{ }\PYG{k}{MONTH}\PYG{p}{(}\PYG{n}{paymentDate}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{7}\PYG{p}{;}
+\end{Verbatim}

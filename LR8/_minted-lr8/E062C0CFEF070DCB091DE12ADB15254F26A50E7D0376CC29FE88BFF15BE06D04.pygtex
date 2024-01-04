@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n+nf}{datediff}\PYG{p}{(}\PYG{n+nf}{max}\PYG{p}{(}\PYG{n}{orderDate}\PYG{p}{),}\PYG{+w}{ }\PYG{n+nf}{min}\PYG{p}{(}\PYG{n}{orderDate}\PYG{p}{))}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{orders}\PYG{p}{;}
+\end{Verbatim}

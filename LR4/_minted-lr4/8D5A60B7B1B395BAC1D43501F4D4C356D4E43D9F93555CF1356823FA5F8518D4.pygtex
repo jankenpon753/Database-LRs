@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{customer\PYGZus{}id}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Customer ID\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{purch\PYGZus{}amt}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Max Purchase Amount\PYGZdq{}}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{k}{Order}\PYG{+w}{ }\PYG{n}{Cust}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{n}{purch\PYGZus{}amt}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{        }\PYG{k}{SELECT}
+\PYG{+w}{            }\PYG{n+nf}{max}\PYG{p}{(}\PYG{n}{purch\PYGZus{}amt}\PYG{p}{)}
+\PYG{+w}{        }\PYG{k}{FROM}
+\PYG{+w}{            }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{k}{Order}
+\PYG{+w}{        }\PYG{k}{WHERE}
+\PYG{+w}{            }\PYG{n}{customer\PYGZus{}id}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{Cust}\PYG{p}{.}\PYG{n}{customer\PYGZus{}id}
+\PYG{+w}{    }\PYG{p}{)}
+\PYG{k}{Order}\PYG{+w}{ }\PYG{k}{by}
+\PYG{+w}{    }\PYG{n}{customer\PYGZus{}id}
+\end{Verbatim}

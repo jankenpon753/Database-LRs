@@ -1,0 +1,7 @@
+\contentsline {section}{\numberline {1}Tools Used}{3}{}%
+\contentsline {section}{\numberline {2}Process}{3}{}%
+\contentsline {subsection}{\numberline {2.1}SQL Codes:}{3}{}%
+\contentsline {subsection}{\numberline {2.2}Output}{4}{}%
+\contentsline {section}{\numberline {3}Analysis}{5}{}%
+\contentsline {subsubsection}{\numberline {3.0.1}Code explanation}{5}{}%
+\contentsline {section}{\numberline {4}Discussion}{6}{}%

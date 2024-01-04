@@ -1,0 +1,3 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k}{ALTER}\PYG{+w}{ }\PYG{k}{TABLE}\PYG{+w}{ }\PYG{n}{ProductOrder}\PYG{p}{.}\PYG{n}{OrderDetails}\PYG{+w}{ }\PYG{k}{change}\PYG{+w}{ }\PYG{n}{CustomerName}\PYG{+w}{ }\PYG{n}{Cust\PYGZus{}name}\PYG{+w}{ }\PYG{k+kt}{varchar}\PYG{p}{(}\PYG{l+m+mi}{30}\PYG{p}{);}
+\end{Verbatim}

@@ -1,0 +1,41 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{INSERT}\PYG{+w}{ }\PYG{k}{INTO}
+\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{n}{Order\PYGZus{}Details}
+\PYG{+w}{    }\PYG{p}{(}
+\PYG{+w}{        }\PYG{n}{customer\PYGZus{}name}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{mobile}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{address\PYGZus{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{product\PYGZus{}ordered}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{catagory}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{quantity}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{delivery\PYGZus{}status}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{remark}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{order\PYGZus{}date}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{delivery\PYGZus{}date}
+\PYG{+w}{    }\PYG{p}{)}
+\PYG{k}{VALUES}
+\PYG{+w}{    }\PYG{p}{(}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Rifath\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}016245226784\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Vataopara, Lokkhipur, Rajshahi\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Mechanical Keyboard\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Tech Accessories\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+m+mi}{1}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}1\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Good customer\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}2023\PYGZhy{}06\PYGZhy{}11\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}2023\PYGZhy{}06\PYGZhy{}14\PYGZsq{}}
+\PYG{+w}{    }\PYG{p}{),}
+\PYG{+w}{    }\PYG{p}{(}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Sazid\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}01828798623\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Zia Hall, RUET\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Freeze\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Home Appliance\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+m+mi}{1}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}1\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Borolox customer\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}2023\PYGZhy{}01\PYGZhy{}01\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}2023\PYGZhy{}02\PYGZhy{}14\PYGZsq{}}
+\PYG{+w}{    }\PYG{p}{)...}
+\end{Verbatim}

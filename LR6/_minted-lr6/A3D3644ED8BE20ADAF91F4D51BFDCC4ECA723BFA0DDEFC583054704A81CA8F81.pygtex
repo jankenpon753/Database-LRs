@@ -1,0 +1,19 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{m}\PYG{p}{.}\PYG{n}{id}\PYG{+w}{ }\PYG{k}{AS}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Movie ID\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{m}\PYG{p}{.}\PYG{n}{title}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{Title}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{m}\PYG{p}{.}\PYG{n}{director}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{Director}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{m}\PYG{p}{.}\PYG{n}{length\PYGZus{}minutes}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Length(Minutes)\PYGZdq{}}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{movie}\PYG{p}{.}\PYG{n}{movies}\PYG{+w}{ }\PYG{n}{m}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{p}{(}\PYG{n}{m}\PYG{p}{.}\PYG{n}{director}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{m}\PYG{p}{.}\PYG{n}{length\PYGZus{}minutes}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{IN}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{        }\PYG{k}{SELECT}
+\PYG{+w}{            }\PYG{n}{director}\PYG{p}{,}
+\PYG{+w}{            }\PYG{n+nf}{MAX}\PYG{p}{(}\PYG{n}{length\PYGZus{}minutes}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{AS}\PYG{+w}{ }\PYG{n}{max\PYGZus{}length}
+\PYG{+w}{        }\PYG{k}{FROM}
+\PYG{+w}{            }\PYG{n}{movie}\PYG{p}{.}\PYG{n}{movies}
+\PYG{+w}{        }\PYG{k}{GROUP}\PYG{+w}{ }\PYG{k}{BY}
+\PYG{+w}{            }\PYG{n}{director}
+\PYG{+w}{    }\PYG{p}{);}
+\end{Verbatim}

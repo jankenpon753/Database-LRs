@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k}{SELECT}
+\PYG{+w}{        }\PYG{n}{Order\PYGZus{}No}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{Cust\PYGZus{}name}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{Address\PYGZus{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{UnitPrice}\PYG{o}{+}\PYG{n}{UnitPrice}\PYG{o}{*}\PYG{l+m+mf}{.1}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{New\PYGZus{}Price}
+\PYG{+w}{    }\PYG{k}{FROM}
+\PYG{+w}{        }\PYG{n}{ProductOrder}\PYG{p}{.}\PYG{n}{OrderDetails}
+\PYG{+w}{    }\PYG{k}{ORDER}\PYG{+w}{ }\PYG{k}{BY}
+\PYG{+w}{        }\PYG{n}{UnitPrice}\PYG{+w}{ }\PYG{k}{DESC}\PYG{p}{;}
+\end{Verbatim}

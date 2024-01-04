@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{order\PYGZus{}no}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Order No\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{order\PYGZus{}date}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Order Date\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{purchase\PYGZus{}amount}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Purchase Amount\PYGZdq{}}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{Relations}\PYG{p}{.}\PYG{k}{Order}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{n}{salesman\PYGZus{}id}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{5001}
+\end{Verbatim}

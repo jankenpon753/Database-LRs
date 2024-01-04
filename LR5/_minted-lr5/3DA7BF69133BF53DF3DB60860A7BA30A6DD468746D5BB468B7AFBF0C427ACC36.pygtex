@@ -1,0 +1,24 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{customer\PYGZus{}name}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Customer with highest Commission\PYGZdq{}}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{Relations}\PYG{p}{.}\PYG{n}{Customer}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{n}{Customer}\PYG{p}{.}\PYG{n}{customer\PYGZus{}id}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{        }\PYG{k}{SELECT}
+\PYG{+w}{            }\PYG{k}{Order}\PYG{p}{.}\PYG{n}{customer\PYGZus{}id}
+\PYG{+w}{        }\PYG{k}{FROM}
+\PYG{+w}{            }\PYG{n}{Relations}\PYG{p}{.}\PYG{k}{Order}
+\PYG{+w}{        }\PYG{k}{ORDER}\PYG{+w}{ }\PYG{k}{BY}
+\PYG{+w}{            }\PYG{k}{Order}\PYG{p}{.}\PYG{n}{purchase\PYGZus{}amount}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{                }\PYG{k}{SELECT}
+\PYG{+w}{                    }\PYG{n}{salesman}\PYG{p}{.}\PYG{n}{commission}
+\PYG{+w}{                }\PYG{k}{FROM}
+\PYG{+w}{                    }\PYG{n}{Relations}\PYG{p}{.}\PYG{n}{salesman}
+\PYG{+w}{                }\PYG{k}{WHERE}
+\PYG{+w}{                    }\PYG{n}{salesman\PYGZus{}id}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{Order}\PYG{p}{.}\PYG{n}{salesman\PYGZus{}id}
+\PYG{+w}{            }\PYG{p}{)}\PYG{+w}{ }\PYG{k}{DESC}
+\PYG{+w}{        }\PYG{k}{LIMIT}
+\PYG{+w}{            }\PYG{l+m+mi}{1}
+\PYG{+w}{    }\PYG{p}{);}
+\end{Verbatim}

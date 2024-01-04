@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n+nf}{COUNT}\PYG{p}{(}\PYG{n}{order\PYGZus{}no}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Total order from 2016/9/5 to 2016/10/17\PYGZdq{}}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{Relations}\PYG{p}{.}\PYG{k}{Order}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{n}{order\PYGZus{}date}\PYG{+w}{ }\PYG{k}{BETWEEN}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}2016\PYGZhy{}09\PYGZhy{}05\PYGZsq{}}
+\PYG{+w}{    }\PYG{k}{AND}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}2016\PYGZhy{}10\PYGZhy{}17\PYGZsq{}}\PYG{p}{;}
+\end{Verbatim}

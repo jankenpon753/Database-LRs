@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{salesman\PYGZus{}id}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Salesperson\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n+nf}{Count}\PYG{p}{(}\PYG{o}{*}\PYG{p}{)}
+\PYG{k}{from}
+\PYG{+w}{    }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{k}{Order}
+\PYG{k}{Group}\PYG{+w}{ }\PYG{k}{by}
+\PYG{+w}{    }\PYG{n}{salesman\PYGZus{}id}
+\end{Verbatim}

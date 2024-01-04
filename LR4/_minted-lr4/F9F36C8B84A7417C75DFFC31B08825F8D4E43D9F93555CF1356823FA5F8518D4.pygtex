@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{customer\PYGZus{}name}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{Customer\PYGZus{}Name}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{address\PYGZus{}}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{Ordered\PYGZus{}From}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{n}{Order\PYGZus{}Details}
+\PYG{k}{where}
+\PYG{+w}{    }\PYG{n}{address\PYGZus{}}\PYG{+w}{ }\PYG{k}{like}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}\PYGZpc{}Rajshahi\PYGZpc{}\PYGZsq{}}
+\end{Verbatim}

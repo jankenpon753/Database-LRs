@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{order\PYGZus{}code}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{Order\PYGZus{}Code}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{mobile}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{Customer\PYGZus{}Mobile}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{quantity}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{n}{Order\PYGZus{}Details}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{n}{quantity}\PYG{+w}{ }\PYG{k}{in}\PYG{p}{(}\PYG{l+m+mi}{5}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{10}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{15}\PYG{p}{)}
+\end{Verbatim}

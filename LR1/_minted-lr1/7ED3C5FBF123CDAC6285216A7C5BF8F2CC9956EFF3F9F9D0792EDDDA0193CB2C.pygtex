@@ -1,0 +1,58 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{CREATE}\PYG{+w}{ }\PYG{k}{DATABASE}\PYG{+w}{ }\PYG{n}{Product}\PYG{p}{;}
+
+\PYG{n}{use}\PYG{+w}{ }\PYG{n}{Product}\PYG{p}{;}
+
+\PYG{k}{CREATE}\PYG{+w}{ }\PYG{k}{TABLE}
+\PYG{+w}{    }\PYG{n}{ProductInfo}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{        }\PYG{n}{Id}\PYG{+w}{ }\PYG{n+nb}{int}\PYG{+w}{ }\PYG{k}{not}\PYG{+w}{ }\PYG{k}{null}\PYG{+w}{ }\PYG{n}{auto\PYGZus{}increment}\PYG{+w}{ }\PYG{k}{primary}\PYG{+w}{ }\PYG{k}{key}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{Name}\PYG{+w}{ }\PYG{n+nb}{varchar}\PYG{p}{(}\PYG{l+m+mi}{30}\PYG{p}{),}
+\PYG{+w}{        }\PYG{n}{OrderID}\PYG{+w}{ }\PYG{n+nb}{int}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{Salesman}\PYG{+w}{ }\PYG{n+nb}{varchar}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{),}
+\PYG{+w}{        }\PYG{n}{Catagory}\PYG{+w}{ }\PYG{n+nb}{varchar}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{),}
+\PYG{+w}{        }\PYG{n}{Unit\PYGZus{}Price}\PYG{+w}{ }\PYG{n+nb}{int}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{Quantity}\PYG{+w}{ }\PYG{n+nb}{int}
+\PYG{+w}{    }\PYG{p}{)}
+\PYG{k}{INSERT}\PYG{+w}{ }\PYG{k}{INTO}
+\PYG{+w}{    }\PYG{n}{ProductProductInfo}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{        }\PYG{n}{Name}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{OrderID}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{Salesman}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{Catagory}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{Unit\PYGZus{}Price}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{Quantity}
+\PYG{+w}{    }\PYG{p}{)}
+\PYG{k}{VALUES}
+\PYG{+w}{    }\PYG{p}{(}\PYG{l+s+s1}{\PYGZsq{}Mouse\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{123}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}Robert\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}Accessories\PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{2560}\PYG{p}{.}\PYG{l+m+mi}{00}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mi}{3}\PYG{p}{),}
+\PYG{+w}{    }\PYG{p}{(}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Earphone\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+m+mi}{1253}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Robert\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Accessories\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+m+mi}{1560}\PYG{p}{.}\PYG{l+m+mi}{00}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+m+mi}{2}
+\PYG{+w}{    }\PYG{p}{),}
+\PYG{+w}{    }\PYG{p}{(}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Keyboard\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+m+mi}{156}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Mark\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Accessories\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+m+mi}{4560}\PYG{p}{.}\PYG{l+m+mi}{00}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+m+mi}{4}
+\PYG{+w}{    }\PYG{p}{),}
+\PYG{+w}{    }\PYG{p}{(}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Mousepad\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+m+mi}{1232}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}John\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Accessories\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+m+mi}{560}\PYG{p}{.}\PYG{l+m+mi}{00}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+m+mi}{2}
+\PYG{+w}{    }\PYG{p}{);}
+
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{o}{*}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{Product}\PYG{p}{.}\PYG{n}{ProductInfo}
+\PYG{k}{where}
+\PYG{+w}{    }\PYG{n}{Salesman}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}Robert\PYGZsq{}}
+\end{Verbatim}

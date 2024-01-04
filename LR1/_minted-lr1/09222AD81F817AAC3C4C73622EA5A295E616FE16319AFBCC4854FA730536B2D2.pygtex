@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{CREATE}\PYG{+w}{ }\PYG{k}{TABLE}
+\PYG{n}{ProductInfo}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{    }\PYG{n}{Id}\PYG{+w}{ }\PYG{n+nb}{int}\PYG{+w}{ }\PYG{k}{not}\PYG{+w}{ }\PYG{k}{null}\PYG{+w}{ }\PYG{n}{auto\PYGZus{}increment}\PYG{+w}{ }\PYG{k}{primary}\PYG{+w}{ }\PYG{k}{key}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{Name}\PYG{+w}{ }\PYG{n+nb}{varchar}\PYG{p}{(}\PYG{l+m+mi}{30}\PYG{p}{),}
+\PYG{+w}{    }\PYG{n}{OrderID}\PYG{+w}{ }\PYG{n+nb}{int}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{Salesman}\PYG{+w}{ }\PYG{n+nb}{varchar}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{),}
+\PYG{+w}{    }\PYG{n}{Catagory}\PYG{+w}{ }\PYG{n+nb}{varchar}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{),}
+\PYG{+w}{    }\PYG{n}{Unit\PYGZus{}Price}\PYG{+w}{ }\PYG{n+nb}{int}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{Quantity}\PYG{+w}{ }\PYG{n+nb}{int}
+\PYG{p}{)}
+\end{Verbatim}

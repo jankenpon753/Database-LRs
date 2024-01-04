@@ -1,0 +1,13 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{customer\PYGZus{}id}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{Customer}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{ord\PYGZus{}date}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Order Date\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n+nf}{max}\PYG{p}{(}\PYG{n}{purch\PYGZus{}amt}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Max ordered on date\PYGZdq{}}
+\PYG{k}{from}
+\PYG{+w}{    }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{k}{Order}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{n}{purch\PYGZus{}amt}\PYG{+w}{ }\PYG{o}{\PYGZgt{}}\PYG{+w}{ }\PYG{l+m+mi}{2000}
+\PYG{k}{group}\PYG{+w}{ }\PYG{k}{by}
+\PYG{+w}{    }\PYG{n}{customer\PYGZus{}id}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{ord\PYGZus{}date}
+\end{Verbatim}

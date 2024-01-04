@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{title}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{Title}\PYG{p}{,}
+\PYG{+w}{    }\PYG{k}{FORMAT}\PYG{p}{(}\PYG{n}{domestic\PYGZus{}sales}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}N\PYGZsq{}}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Domestic Sales\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{k}{FORMAT}\PYG{p}{(}\PYG{n}{international\PYGZus{}sales}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}N\PYGZsq{}}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}International Sales\PYGZdq{}}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{movie}\PYG{p}{.}\PYG{n}{movies}\PYG{+w}{ }\PYG{n}{m}
+\PYG{+w}{    }\PYG{k}{JOIN}\PYG{+w}{ }\PYG{n}{movie}\PYG{p}{.}\PYG{n}{box\PYGZus{}office}\PYG{+w}{ }\PYG{n}{b}\PYG{+w}{ }\PYG{k}{ON}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{.}\PYG{n}{movie\PYGZus{}id}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{m}\PYG{p}{.}\PYG{n}{id}\PYG{p}{;}
+\end{Verbatim}

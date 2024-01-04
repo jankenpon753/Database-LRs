@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{ord\PYGZus{}date}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Order Date\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n+nf}{max}\PYG{p}{(}\PYG{n}{purch\PYGZus{}amt}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Purchased Max Amount\PYGZdq{}}
+\PYG{k}{from}
+\PYG{+w}{    }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{k}{Order}
+\PYG{k}{Group}\PYG{+w}{ }\PYG{k}{by}
+\PYG{+w}{    }\PYG{n}{ord\PYGZus{}date}
+\PYG{k}{Order}\PYG{+w}{ }\PYG{k}{by}
+\PYG{+w}{    }\PYG{n}{ord\PYGZus{}date}
+\end{Verbatim}

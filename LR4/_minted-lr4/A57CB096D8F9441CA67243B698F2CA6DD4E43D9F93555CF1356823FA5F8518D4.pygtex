@@ -1,0 +1,7 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+
+\PYG{err}{\PYGZbs{}}\PYG{n}{subsubsection}\PYG{err}{\PYGZob{}}\PYG{n}{Calculate}\PYG{+w}{ }\PYG{n}{total}\PYG{+w}{ }\PYG{n}{purchase}\PYG{+w}{ }\PYG{n}{amount}\PYG{+w}{ }\PYG{k}{of}\PYG{+w}{ }\PYG{k}{all}\PYG{+w}{ }\PYG{n}{orders}\PYG{p}{.}\PYG{+w}{ }\PYG{k}{Return}\PYG{+w}{ }\PYG{n}{total}\PYG{+w}{ }\PYG{n}{purchase}\PYG{+w}{ }\PYG{n}{amount}\PYG{p}{.}\PYG{err}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{n}{subsubsection}\PYG{o}{*}\PYG{err}{\PYGZob{}}\PYG{k}{Code}\PYG{o}{:}\PYG{err}{\PYGZcb{}}
+\PYG{err}{\PYGZbs{}}\PYG{k}{begin}\PYG{err}{\PYGZob{}}\PYG{n}{minted}\PYG{err}{\PYGZcb{}[}\PYG{n}{breaklines}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{linenos}\PYG{err}{]\PYGZob{}}\PYG{n}{mysql}\PYG{err}{\PYGZcb{}}
+
+\end{Verbatim}

@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k}{ALTER}\PYG{+w}{ }\PYG{k}{TABLE}\PYG{+w}{ }\PYG{n}{ProductOrder}\PYG{p}{.}\PYG{n}{OrderDetails}
+\PYG{+w}{    }\PYG{k}{drop}\PYG{+w}{ }\PYG{k}{column}\PYG{+w}{ }\PYG{n}{ProductCatagory}\PYG{p}{;}
+
+\PYG{+w}{    }\PYG{k}{ALTER}\PYG{+w}{ }\PYG{k}{TABLE}\PYG{+w}{ }\PYG{n}{ProductOrder}\PYG{p}{.}\PYG{n}{OrderDetails}\PYG{+w}{ }\PYG{k}{ADD}\PYG{+w}{ }\PYG{n}{ProductCatagory}\PYG{+w}{ }\PYG{k+kt}{varchar}\PYG{p}{(}\PYG{l+m+mi}{20}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{after}\PYG{+w}{ }\PYG{n}{Address\PYGZus{}}\PYG{p}{;}
+\end{Verbatim}

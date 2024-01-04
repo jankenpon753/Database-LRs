@@ -1,0 +1,164 @@
+-- CREATE DATABASE IF NOT EXISTS ProductOrderDetailsLR3;
+-- -- creating databse
+-- -- creating the table as instructed
+-- CREATE TABLE ProductOrderDetailsLR3.Customer(
+--     customer_id int Auto_Increment Primary Key,
+--     cust_name varchar(40),
+--     city varchar(40),
+--     grade int,
+--     ord_date Date,
+--     salesman_id int -- )
+--     ALTER TABLE
+--         ProductOrderDetailsLR3.Customer drop column ord_date;
+-- INSERT INTO
+--     ProductOrderDetailsLR3.Customer (cust_name, city, grade, salesman_id)
+-- VALUES
+--     (
+--         3001,
+--         'Brad Guzan',
+--         'London',
+--         null,
+--         5005
+--     );
+-- (
+--     'Nick Romando',
+--     'New York',
+--     100,
+--     5001
+-- ),
+-- (
+--     'Jozy Altidor',
+--     'Moscow',
+--     200,
+--     5007
+-- ),
+-- (
+--     'Fabian Johnson',
+--     'Paris',
+--     300,
+--     5006
+-- ),
+-- (
+--     'Graham Zusi',
+--     'California',
+--     200,
+--     5002
+-- );
+-- (
+--     3007,
+--     'Brad Davis',
+--     'New York',
+--     200,
+--     5001
+-- );
+-- (
+--     'Julian Green',
+--     'London',
+--     300,
+--     5002
+-- ),
+-- (
+--     'Geoff Cameron',
+--     'Berlin',
+--     100,
+--     5003
+-- );
+-- SELECT
+--     SUM(purch_amt) as "Total Purchase Amount"
+-- FROM
+--     ProductOrderDetailsLR3.Order 
+-- SELECT
+--     salesman_id as "Salesperson",
+--     Count(*)
+-- from
+--     ProductOrderDetailsLR3.Order
+-- Group by
+--     salesman_id 
+-- SELECT
+--     Count(DISTINCT salesman_id) as "Sales People"
+-- from
+--     ProductOrderDetailsLR3.Order
+-- SELECT
+--     city as City,
+--     grade as "Highest Grade"
+-- FROM
+--     ProductOrderDetailsLR3.Customer Cust
+-- WHERE
+--     grade = (
+--         SELECT
+--             max(grade)
+--         FROM
+--             ProductOrderDetailsLR3.Customer
+--         WHERE
+--             city = cust.city
+--         group by
+--             city
+--     );
+-- SELECT
+--     customer_id as "Customer ID",
+--     purch_amt as "Max Purchase Amount"
+-- FROM
+--     ProductOrderDetailsLR3.Order Cust
+-- WHERE
+--     purch_amt = (
+--         SELECT
+--             max(purch_amt)
+--         FROM
+--             ProductOrderDetailsLR3.Order
+--         WHERE
+--             customer_id = Cust.customer_id
+--     )
+-- Order by
+--     customer_id 
+-- SELECT
+--     ord_date as "Order Date",
+--     purch_amt as "Purchased Max Amount"
+-- FROM
+--     ProductOrderDetailsLR3.Order Ord
+-- WHERE
+--     purch_amt = (
+--         SELECT
+--             max(purch_amt)
+--         FROM
+--             ProductOrderDetailsLR3.Order
+--         WHERE
+--             ord_date = ord.ord_date
+--     )
+-- Order by
+--     ord_date 
+-- SELECT
+--     ord_date as "Order Date",
+--     max(purch_amt) as "Purchased Max Amount"
+-- from
+--     ProductOrderDetailsLR3.Order
+-- Group by
+--     ord_date
+-- Order by
+--     ord_date 
+-- SELECT
+--     salesman_id as "Salesperson ID",
+--     max(purch_amt) as "Purchased Max Amount",
+--     ord_date as "Ordered on"
+-- from
+--     ProductOrderDetailsLR3.Order
+-- WHERE
+--     ord_date = "2012-08-17"
+-- Group by
+--     salesman_id
+-- Order by
+--     salesman_id 
+SELECT
+    customer_id as Customer,
+    ord_date as "Order Date",
+    max(purch_amt) as "Max ordered on date"
+from
+    ProductOrderDetailsLR3.Order
+WHERE
+    purch_amt > 2000
+group by
+    customer_id,
+    ord_date -- SELECT
+    --     *
+    -- FROM
+    --     -- ProductOrderDetailsLR3.Order
+    --     ProductOrderDetailsLR3.Customer

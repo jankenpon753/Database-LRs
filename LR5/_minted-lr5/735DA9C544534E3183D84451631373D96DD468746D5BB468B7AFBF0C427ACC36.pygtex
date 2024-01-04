@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n+nf}{SUM}\PYG{p}{(}
+\PYG{+w}{        }\PYG{n}{purchase\PYGZus{}amount}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{            }\PYG{k}{SELECT}
+\PYG{+w}{                }\PYG{n}{commission}
+\PYG{+w}{            }\PYG{k}{FROM}
+\PYG{+w}{                }\PYG{n}{Relations}\PYG{p}{.}\PYG{n}{salesman}
+\PYG{+w}{            }\PYG{k}{WHERE}
+\PYG{+w}{                }\PYG{n}{salesman\PYGZus{}id}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{k}{Order}\PYG{p}{.}\PYG{n}{salesman\PYGZus{}id}
+\PYG{+w}{        }\PYG{p}{)}
+\PYG{+w}{    }\PYG{p}{)}\PYG{+w}{ }\PYG{k}{AS}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Total Commission\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{salesman\PYGZus{}id}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Salesman ID\PYGZdq{}}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{Relations}\PYG{p}{.}\PYG{k}{Order}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{k}{Order}\PYG{p}{.}\PYG{n}{salesman\PYGZus{}id}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{5001}\PYG{p}{;}
+\end{Verbatim}

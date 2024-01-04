@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{o}{*}
+\PYG{+w}{    }\PYG{k}{FROM}
+\PYG{+w}{        }\PYG{n}{ProductOrder}\PYG{p}{.}\PYG{n}{OrderDetails}
+\PYG{+w}{    }\PYG{k}{ORDER}\PYG{+w}{ }\PYG{k}{BY}
+\PYG{+w}{        }\PYG{n}{Quantity}\PYG{+w}{ }\PYG{k}{ASC}\PYG{p}{;}
+\end{Verbatim}

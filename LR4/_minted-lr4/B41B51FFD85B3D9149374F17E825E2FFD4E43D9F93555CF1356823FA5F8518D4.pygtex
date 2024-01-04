@@ -1,0 +1,17 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} updating the remarks as Cannon be proccessed for future operations}
+\PYG{k}{UPDATE}
+\PYG{+w}{    }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{n}{Order\PYGZus{}Details}
+\PYG{k}{set}
+\PYG{+w}{    }\PYG{n}{remark}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}Cannot be proccessed\PYGZsq{}}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{n}{delivery\PYGZus{}status}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+m+mi}{0}
+\PYG{c+c1}{\PYGZhy{}\PYGZhy{} finding the customers}
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{customer\PYGZus{}name}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{Customer\PYGZus{}Name}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{address\PYGZus{}}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{Ordered\PYGZus{}From}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{n}{Order\PYGZus{}Details}
+\PYG{k}{where}
+\PYG{+w}{    }\PYG{n}{remark}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}Cannot be proccessed\PYGZsq{}}
+\end{Verbatim}

@@ -1,0 +1,18 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{city}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{City}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{grade}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Highest Grade\PYGZdq{}}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{n}{Customer}\PYG{+w}{ }\PYG{n}{Cust}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{n}{grade}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{        }\PYG{k}{SELECT}
+\PYG{+w}{            }\PYG{n+nf}{max}\PYG{p}{(}\PYG{n}{grade}\PYG{p}{)}
+\PYG{+w}{        }\PYG{k}{FROM}
+\PYG{+w}{            }\PYG{n}{ProductOrderDetailsLR3}\PYG{p}{.}\PYG{n}{Customer}
+\PYG{+w}{        }\PYG{k}{WHERE}
+\PYG{+w}{            }\PYG{n}{city}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{cust}\PYG{p}{.}\PYG{n}{city}
+\PYG{+w}{        }\PYG{k}{group}\PYG{+w}{ }\PYG{k}{by}
+\PYG{+w}{            }\PYG{n}{city}
+\PYG{+w}{    }\PYG{p}{);}
+\end{Verbatim}

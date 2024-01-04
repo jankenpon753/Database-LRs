@@ -1,0 +1,262 @@
+-- CREATE DATABASE IF NOT EXISTS ProductOrderDetailsLR3;
+-- -- creating databse
+-- -- creating the table as instructed
+-- CREATE TABLE ProductOrderDetailsLR3.Order_Details(
+--     order_code int Auto_Increment Primary Key,
+--     customer_name varchar(30),
+--     mobile varchar(30),
+--     address_ varchar(70),
+--     product_ordered varchar(30),
+--     catagory varchar(30),
+--     quantity int,
+--     delivery_status boolean,
+--     remark varchar(40)
+-- )
+alter TABLE
+    ProductOrderDetailsLR3.Order_Details
+ADD
+    order_date date,
+ADD
+    delivery_date date;
+
+-- INSERT INTO
+--     ProductOrderDetailsLR3.Order_Details (
+--         customer_name,
+--         mobile,
+--         address_,
+--         product_ordered,
+--         catagory,
+--         quantity,
+--         delivery_status,
+--         remark,
+--         order_date,
+--         delivery_date
+--     )
+-- VALUES
+--     (
+--         'Rifath',
+--         '016245226784',
+--         'Vataopara, Lokkhipur, Rajshahi',
+--         'Mechanical Keyboard',
+--         'Tech Accessories',
+--         1,
+--         '1',
+--         'Good customer',
+--         '2023-06-11',
+--         '2023-06-14'
+--     ),
+--     (
+--         'Sazid',
+--         '01828798623',
+--         'Zia Hall, RUET',
+--         'Freeze',
+--         'Home Appliance',
+--         1,
+--         '1',
+--         'Borolox customer',
+--         '2023-01-01',
+--         '2023-02-14'
+--     ),
+-- (
+--     'Mahin',
+--     '01759802122',
+--     'Vodra, Rajshahi',
+--     'Tab',
+--     'Tech Accessories',
+--     1,
+--     '0',
+--     null,
+--     '2023-08-03',
+--     null
+-- ),
+-- (
+--     'Munir',
+--     '01518738721',
+--     'Vodra, Rajshahi',
+--     'Gaming Chair',
+--     'Furniture',
+--     4,
+--     '0',
+--     null,
+--     '2023-10-01',
+--     null
+-- ),
+-- (
+--     'Iyasir',
+--     '01773992794',
+--     'Monnafer Mor',
+--     'Chess Board',
+--     'Games',
+--     3,
+--     '1',
+--     'Money due',
+--     '2022-11-15',
+--     '2022-12-14'
+-- ),
+-- (
+--     'Rifath',
+--     '016245226784',
+--     'Vataopara, Lokkhipur, Rajshahi',
+--     'LED',
+--     'Electronics',
+--     50,
+--     '0',
+--     null,
+--     '2017-10-15',
+--     null
+-- ),
+-- (
+--     'Rahul',
+--     '01968735817',
+--     'Vataopara, Lokkhipur, Rajshahi',
+--     'Mechanical Keyboard',
+--     'Tech Accessories',
+--     1,
+--     '0',
+--     null,
+--     '2002-06-29',
+--     null
+-- ),
+-- (
+--     'Radwan',
+--     '01834277119',
+--     'Talaimari, Rajshahi',
+--     'Mechanical Keyboard',
+--     'Tech Accessories',
+--     0,
+--     '1',
+--     null,
+--     '2011-10-15',
+--     null
+-- ),
+-- (
+--     'Maksud',
+--     '01517828301',
+--     'Monnafer Mor, Rajshahi',
+--     'Anitvirus',
+--     'Software',
+--     0,
+--     '2',
+--     null,
+--     '2019-02-11',
+--     null
+-- ),
+-- (
+--     'Galib',
+--     '01772967677',
+--     'Vodra',
+--     'Shirt',
+--     'Clothes',
+--     1,
+--     '20',
+--     null,
+--     '2011-06-11',
+--     '2011-07-02'
+-- ),
+-- (
+--     'Shanto',
+--     '01761326263',
+--     'Zia Hall, RUET',
+--     'Mosquito Net',
+--     'Furniture',
+--     0,
+--     '2',
+--     null,
+--     '2018-12-11',
+--     null
+-- ),
+-- (
+--     'Nahid',
+--     '01971431789',
+--     'Tiles potti, Rani Bazar',
+--     'Watch',
+--     'Fashion',
+--     1,
+--     '2',
+--     'Casio 22111',
+--     '2018-12-11',
+--     '2018-12-22'
+-- ),
+-- (
+--     'Sadek',
+--     '01909488778',
+--     'Tiles potti, Rani Bazar',
+--     'Perfume',
+--     'Fashion',
+--     0,
+--     '4',
+--     null,
+--     '2014-12-11',
+--     null
+-- ),
+-- (
+--     'Dipu',
+--     '01842630634',
+--     'Azampur Kachabazar, Uttara',
+--     'Internal SSD',
+--     'Tech Accessories',
+--     1,
+--     '10',
+--     'For business',
+--     '2018-12-11',
+--     '2023-04-11'
+-- ),
+-- (
+--     'Shanto',
+--     '01761326263',
+--     'Zia Hall, RUET',
+--     'Ashtray',
+--     'Furniture',
+--     1,
+--     '2',
+--     null,
+--     '2018-11-23',
+--     '2018-12-11'
+-- );
+-- UPDATE
+--     ProductOrderDetailsLR3.Order_Details
+-- set
+--     address_ = 'Zia Hall, Rajshahi'
+-- WHERE
+--     customer_name = 'Shanto'
+-- SELECT
+--     customer_name as Customer_Name,
+--     address_ as Ordered_From
+-- FROM
+--     ProductOrderDetailsLR3.Order_Details
+-- where
+--     address_ like '%Rajshahi%' -- updating the remarks as Cannon be proccessed for future operations
+-- UPDATE
+--     ProductOrderDetailsLR3.Order_Details
+-- set
+--     remark = 'Cannot be proccessed'
+-- WHERE
+--     delivery_status = 0 -- finding the customers
+-- SELECT
+--     customer_name as Customer_Name,
+--     address_ as Ordered_From
+-- FROM
+--     ProductOrderDetailsLR3.Order_Details
+-- where
+--     remark = 'Cannot be proccessed'
+-- SELECT
+--     customer_name as Customer_Name,
+--     product_ordered as Product
+-- FROM
+--     ProductOrderDetailsLR3.Order_Details
+-- where
+--     order_date > '2021-10-30'
+-- UPDATE
+--     ProductOrderDetailsLR3.Order_Details
+-- set
+--     quantity = 15
+-- WHERE
+--     customer_name = 'Dipu'
+-- SELECT
+--     order_code as Order_Code,
+--     mobile as Customer_Mobile,
+--     quantity
+-- FROM
+--     ProductOrderDetailsLR3.Order_Details
+-- WHERE
+--     quantity in(5, 10, 15)

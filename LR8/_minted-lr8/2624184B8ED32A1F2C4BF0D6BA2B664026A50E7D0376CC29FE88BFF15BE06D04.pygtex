@@ -1,0 +1,11 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{productCode}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{priceEach}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{MSRP}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{products}
+\PYG{+w}{    }\PYG{k}{JOIN}\PYG{+w}{ }\PYG{n}{orderdetails}\PYG{+w}{ }\PYG{k}{USING}\PYG{p}{(}\PYG{n}{productCode}\PYG{p}{)}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{n}{priceEach}\PYG{+w}{ }\PYG{o}{\PYGZlt{}}\PYG{+w}{ }\PYG{l+m+mf}{0.8}\PYG{+w}{ }\PYG{o}{*}\PYG{+w}{ }\PYG{n}{MSRP}
+\end{Verbatim}

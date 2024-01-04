@@ -1,0 +1,16 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n+nf}{concat}\PYG{p}{(}\PYG{n}{e}\PYG{p}{.}\PYG{n}{firstName}\PYG{p}{,}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{} \PYGZsq{}}\PYG{p}{,}\PYG{+w}{ }\PYG{n}{e}\PYG{p}{.}\PYG{n}{lastName}\PYG{p}{),}
+\PYG{+w}{    }\PYG{n}{e}\PYG{p}{.}\PYG{n}{jobTitle}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n+nf}{SUM}\PYG{p}{(}\PYG{n}{od}\PYG{p}{.}\PYG{n}{quantityOrdered}\PYG{+w}{ }\PYG{o}{*}\PYG{p}{(}\PYG{n}{od}\PYG{p}{.}\PYG{n}{priceEach}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{p}\PYG{p}{.}\PYG{n}{buyPrice}\PYG{p}{))}\PYG{+w}{ }\PYG{k}{AS}\PYG{+w}{ }\PYG{n}{totalProfit}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{employees}\PYG{+w}{ }\PYG{n}{e}
+\PYG{+w}{    }\PYG{k}{JOIN}\PYG{+w}{ }\PYG{n}{customers}\PYG{+w}{ }\PYG{n}{c}\PYG{+w}{ }\PYG{k}{ON}\PYG{+w}{ }\PYG{n}{e}\PYG{p}{.}\PYG{n}{employeeNumber}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{c}\PYG{p}{.}\PYG{n}{salesRepEmployeeNumber}
+\PYG{+w}{    }\PYG{k}{JOIN}\PYG{+w}{ }\PYG{n}{orders}\PYG{+w}{ }\PYG{n}{o}\PYG{+w}{ }\PYG{k}{USING}\PYG{p}{(}\PYG{n}{customerNumber}\PYG{p}{)}
+\PYG{+w}{    }\PYG{k}{JOIN}\PYG{+w}{ }\PYG{n}{orderdetails}\PYG{+w}{ }\PYG{n}{od}\PYG{+w}{ }\PYG{k}{USING}\PYG{p}{(}\PYG{n}{orderNumber}\PYG{p}{)}
+\PYG{+w}{    }\PYG{k}{JOIN}\PYG{+w}{ }\PYG{n}{products}\PYG{+w}{ }\PYG{n}{p}\PYG{+w}{ }\PYG{k}{USING}\PYG{p}{(}\PYG{n}{productCode}\PYG{p}{)}
+\PYG{k}{GROUP}\PYG{+w}{ }\PYG{k}{BY}
+\PYG{+w}{    }\PYG{n}{e}\PYG{p}{.}\PYG{n}{employeeNumber}
+\PYG{k}{ORDER}\PYG{+w}{ }\PYG{k}{BY}
+\PYG{+w}{    }\PYG{n+nf}{SUM}\PYG{p}{(}\PYG{n}{od}\PYG{p}{.}\PYG{n}{quantityOrdered}\PYG{+w}{ }\PYG{o}{*}\PYG{p}{(}\PYG{n}{od}\PYG{p}{.}\PYG{n}{priceEach}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n}{p}\PYG{p}{.}\PYG{n}{buyPrice}\PYG{p}{))}\PYG{+w}{ }\PYG{k}{DESC}\PYG{p}{;}
+\end{Verbatim}

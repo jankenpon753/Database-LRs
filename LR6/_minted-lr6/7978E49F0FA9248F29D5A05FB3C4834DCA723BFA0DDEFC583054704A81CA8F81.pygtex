@@ -1,0 +1,12 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{c}\PYG{p}{.}\PYG{n}{customer\PYGZus{}name}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Customer Name\PYGZdq{}}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{s}\PYG{p}{.}\PYG{n}{commission}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{Commission}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{Relations}\PYG{p}{.}\PYG{n}{Customer}\PYG{+w}{ }\PYG{n}{c}
+\PYG{+w}{    }\PYG{k}{JOIN}\PYG{+w}{ }\PYG{n}{Relations}\PYG{p}{.}\PYG{n}{salesman}\PYG{+w}{ }\PYG{n}{s}\PYG{+w}{ }\PYG{k}{ON}\PYG{+w}{ }\PYG{n}{c}\PYG{p}{.}\PYG{n}{salesman\PYGZus{}id}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{s}\PYG{p}{.}\PYG{n}{salesman\PYGZus{}id}
+\PYG{k}{ORDER}\PYG{+w}{ }\PYG{k}{BY}
+\PYG{+w}{    }\PYG{n}{s}\PYG{p}{.}\PYG{n}{commission}\PYG{+w}{ }\PYG{k}{DESC}
+\PYG{k}{LIMIT}
+\PYG{+w}{    }\PYG{l+m+mi}{1}\PYG{p}{;}
+\end{Verbatim}

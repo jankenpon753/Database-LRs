@@ -1,0 +1,8 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n+nf}{COUNT}\PYG{p}{(}\PYG{n}{orderNumber}\PYG{p}{)}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{orders}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{k}{status}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}On Hold\PYGZsq{}}\PYG{p}{;}
+\end{Verbatim}

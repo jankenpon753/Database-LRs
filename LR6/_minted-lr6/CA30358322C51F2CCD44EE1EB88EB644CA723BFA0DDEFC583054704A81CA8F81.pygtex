@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{director}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{Director}\PYG{p}{,}
+\PYG{+w}{    }\PYG{k}{FORMAT}\PYG{p}{(}\PYG{n+nf}{SUM}\PYG{p}{(}\PYG{n}{domestic\PYGZus{}sales}\PYG{p}{),}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}N\PYGZsq{}}\PYG{p}{)}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{l+s+s2}{\PYGZdq{}Total Domestic Sales\PYGZdq{}}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{movie}\PYG{p}{.}\PYG{n}{movies}\PYG{+w}{ }\PYG{n}{m}
+\PYG{+w}{    }\PYG{k}{JOIN}\PYG{+w}{ }\PYG{n}{movie}\PYG{p}{.}\PYG{n}{box\PYGZus{}office}\PYG{+w}{ }\PYG{n}{b}\PYG{+w}{ }\PYG{k}{ON}\PYG{+w}{ }\PYG{n}{m}\PYG{p}{.}\PYG{n}{id}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{.}\PYG{n}{movie\PYGZus{}id}
+\PYG{k}{WHERE}
+\PYG{+w}{    }\PYG{n}{director}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{l+s+s1}{\PYGZsq{}John Lasseter\PYGZsq{}}\PYG{p}{;}
+\end{Verbatim}

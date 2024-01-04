@@ -1,0 +1,10 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k}{SELECT}
+\PYG{+w}{    }\PYG{n}{title}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{Title}\PYG{p}{,}
+\PYG{+w}{    }\PYG{n}{rating}\PYG{+w}{ }\PYG{k}{as}\PYG{+w}{ }\PYG{n}{Rating}
+\PYG{k}{FROM}
+\PYG{+w}{    }\PYG{n}{movie}\PYG{p}{.}\PYG{n}{movies}\PYG{+w}{ }\PYG{n}{m}
+\PYG{+w}{    }\PYG{k}{JOIN}\PYG{+w}{ }\PYG{n}{movie}\PYG{p}{.}\PYG{n}{box\PYGZus{}office}\PYG{+w}{ }\PYG{n}{b}\PYG{+w}{ }\PYG{k}{ON}\PYG{+w}{ }\PYG{n}{b}\PYG{p}{.}\PYG{n}{movie\PYGZus{}id}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{n}{m}\PYG{p}{.}\PYG{n}{id}
+\PYG{k}{ORDER}\PYG{+w}{ }\PYG{k}{BY}
+\PYG{+w}{    }\PYG{n}{rating}\PYG{+w}{ }\PYG{k}{DESC}\PYG{p}{;}
+\end{Verbatim}

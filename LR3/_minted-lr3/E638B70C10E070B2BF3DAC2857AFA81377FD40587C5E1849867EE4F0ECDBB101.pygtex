@@ -1,0 +1,22 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{+w}{    }\PYG{k}{INSERT}\PYG{+w}{ }\PYG{k}{INTO}
+\PYG{+w}{    }\PYG{n}{ProductOrder}\PYG{p}{.}\PYG{n}{OrderDetails}\PYG{+w}{ }\PYG{p}{(}
+\PYG{+w}{        }\PYG{n}{Cust\PYGZus{}name}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{Address\PYGZus{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{ProductCatagory}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{Quantity}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{UnitPrice}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n}{OrderDate}
+\PYG{+w}{    }\PYG{p}{)}
+\PYG{+w}{    }\PYG{k}{VALUES}
+\PYG{+w}{    }\PYG{p}{(}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Rahul\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Talaimari\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}Home Appliances\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+m+mi}{4}\PYG{p}{,}
+\PYG{+w}{        }\PYG{l+s+s1}{\PYGZsq{}3000.00\PYGZsq{}}\PYG{p}{,}
+\PYG{+w}{        }\PYG{n+nf}{now}\PYG{+w}{ }\PYG{p}{()}
+\PYG{+w}{    }\PYG{p}{),}
+\PYG{+w}{    }\PYG{p}{...}
+\PYG{+w}{    }\PYG{p}{...}
+\end{Verbatim}
